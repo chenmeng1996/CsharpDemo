@@ -8,7 +8,12 @@ public class MyList<T>
     const int DefaultCapacity = 4;
     T[] _items; // 底层数组
     int _count; // 当前列表元素个数
-    public event EventHandler Changed; // 事件
+
+    /*
+    事件。
+    声明方式是：event 委托类型
+    */
+    public event EventHandler Changed; // 事件回调函数（可能有多个）
 
     /*
     属性
@@ -57,6 +62,7 @@ public class MyList<T>
         OnChanged();
     }
 
+    // 触发回调函数
     protected virtual void OnChanged() =>
         Changed?.Invoke(this, EventArgs.Empty);
 

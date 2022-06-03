@@ -14,7 +14,7 @@ public class UnitTest1
         }
 
         var names = new MyList<string>();
-        // 添加回调函数
+        // 订阅事件，需要传递一个委托。
         names.Changed += new EventHandler(ListChanged);
         names.Add("Liz");
         names.Add("Martha");

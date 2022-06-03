@@ -22,6 +22,10 @@ public class UnitTest1
         optionalText = "Hello World.";
         Console.WriteLine(optionalText);
 
-        
+        // 不可为null的string，需要初始化
+        string text = "";
+        Console.WriteLine(text); // 无输出
+        text = "Hello World.";
+        Console.WriteLine(text);
     }
 }
