@@ -5,7 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>AsyncDemo2</StartupObject>
+    <StartupObject>AsyncDemo1</StartupObject>
   </PropertyGroup>
 
 </Project>
