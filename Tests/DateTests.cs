@@ -21,4 +21,13 @@ public class UnitTest1
         Console.WriteLine(dateOffset.Day);
         Console.WriteLine(DateTime.DaysInMonth(dateOffset.Year, dateOffset.Month));
     }
+
+    [TestMethod]
+    public void Test3()
+    {
+        var dateTime = DateTimeOffset.Parse("2022-03-27T00:00:00Z").UtcDateTime;
+        var date = new DateTimeOffset(dateTime).AddMonths(-1);
+        Console.WriteLine(date);
+    }
+
 }
